@@ -1,18 +1,287 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>curious-bible-landing</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
+    <title>150 Curiosidades Bíblicas</title>
+    <meta name="description" content="E-book com 150 curiosidades bíblicas fascinantes que vão enriquecer seu conhecimento sobre a Bíblia." />
+    <meta name="author" content="Curiosidades Bíblicas" />
+    <meta property="og:image" content="images/og-image.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span>Curiosidades Bíblicas</span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="navbar-menu-desktop">
+            <a href="#beneficios" class="navbar-link">Benefícios</a>
+            <a href="#preview" class="navbar-link">Prévia</a>
+            <a href="#testimonials" class="navbar-link">Depoimentos</a>
+            <a href="#faq" class="navbar-link">FAQ</a>
+            <a href="#comprar" class="navbar-button">Comprar agora</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="navbar-toggle" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon menu-icon">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon close-icon hidden">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="navbar-menu-mobile hidden">
+          <a href="#beneficios" class="navbar-mobile-link">Benefícios</a>
+          <a href="#preview" class="navbar-mobile-link">Prévia</a>
+          <a href="#testimonials" class="navbar-mobile-link">Depoimentos</a>
+          <a href="#faq" class="navbar-mobile-link">FAQ</a>
+          <a href="#comprar" class="navbar-mobile-button">Comprar agora</a>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">150 Curiosidades Bíblicas que você precisa conhecer</h1>
+            <p class="hero-subtitle">Descubra fatos fascinantes e surpreendentes sobre as histórias, personagens e ensinamentos da Bíblia.</p>
+            <div class="hero-cta">
+              <a href="#comprar" class="primary-button">Comprar agora</a>
+              <a href="#preview" class="secondary-button">Ver prévia</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="images/ebook-cover.png" alt="E-book 150 Curiosidades Bíblicas" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section id="beneficios" class="benefits">
+        <div class="container">
+          <div class="section-header fade-in-section">
+            <div class="section-label">
+              <div class="line"></div>
+              <span>Por que comprar</span>
+              <div class="line"></div>
+            </div>
+            <h2 class="section-title">O que você vai encontrar neste e-book</h2>
+            <p class="section-description">
+              Prepare-se para uma jornada incrível através das páginas da Bíblia, 
+              revelando detalhes surpreendentes que raramente são notados.
+            </p>
+          </div>
+
+          <div class="benefits-grid">
+            <!-- Benefits items will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Preview Section -->
+      <section id="preview" class="preview">
+        <div class="container">
+          <div class="section-header fade-in-section">
+            <div class="section-label">
+              <div class="line"></div>
+              <span>Prévia</span>
+              <div class="line"></div>
+            </div>
+            <h2 class="section-title">Conheça algumas curiosidades</h2>
+            <p class="section-description">
+              Veja uma pequena amostra das 150 curiosidades bíblicas presentes no e-book
+            </p>
+          </div>
+
+          <div class="preview-carousel fade-in-section">
+            <div class="preview-card active">
+              <div class="card-number">01</div>
+              <h3 class="card-title">Adão e Eva nunca comeram uma maçã</h3>
+              <p class="card-text">
+                Embora a tradição popular mencione uma maçã como o fruto proibido, 
+                a Bíblia nunca especifica qual era a fruta. Ela apenas fala do 
+                "fruto da árvore do conhecimento do bem e do mal".
+              </p>
+            </div>
+            <div class="preview-card">
+              <div class="card-number">02</div>
+              <h3 class="card-title">A Arca de Noé era enorme</h3>
+              <p class="card-text">
+                Segundo as medidas bíblicas, a Arca teria cerca de 150 metros de comprimento, 
+                25 metros de largura e 15 metros de altura - o tamanho de um navio de carga moderno.
+              </p>
+            </div>
+            <div class="preview-card">
+              <div class="card-number">03</div>
+              <h3 class="card-title">Moisés não dividiu o Mar Vermelho</h3>
+              <p class="card-text">
+                Na verdade, o termo em hebraico "Yam Suph" é mais precisamente traduzido como "Mar dos Juncos" 
+                ou "Mar de Caniços", possivelmente um lago ou pântano próximo ao Mar Vermelho.
+              </p>
+            </div>
+            <div class="dots-container">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-header fade-in-section">
+            <div class="section-label">
+              <div class="line"></div>
+              <span>Depoimentos</span>
+              <div class="line"></div>
+            </div>
+            <h2 class="section-title">O que estão dizendo sobre o e-book</h2>
+            <p class="section-description">
+              Veja as opiniões de quem já leu e se surpreendeu com as curiosidades bíblicas
+            </p>
+          </div>
+
+          <div class="testimonials-grid fade-in-section">
+            <!-- Testimonials will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="comprar" class="pricing">
+        <div class="container">
+          <div class="section-header fade-in-section">
+            <div class="section-label">
+              <div class="line"></div>
+              <span>Valor</span>
+              <div class="line"></div>
+            </div>
+            <h2 class="section-title">Adquira seu e-book agora</h2>
+            <p class="section-description">
+              Invista em conhecimento bíblico e descubra curiosidades que enriquecerão sua compreensão espiritual
+            </p>
+          </div>
+
+          <div class="pricing-card fade-in-section">
+            <div class="pricing-content">
+              <div class="pricing-header">
+                <h3>E-book Digital</h3>
+                <p class="format">Formato PDF</p>
+              </div>
+              <div class="pricing-features">
+                <ul>
+                  <li><span class="check-icon">✓</span> 150 curiosidades bíblicas inéditas</li>
+                  <li><span class="check-icon">✓</span> Referências e fontes confiáveis</li>
+                  <li><span class="check-icon">✓</span> Acesso imediato após a compra</li>
+                  <li><span class="check-icon">✓</span> Compatível com todos os dispositivos</li>
+                  <li><span class="check-icon">✓</span> Garantia de 7 dias</li>
+                </ul>
+              </div>
+              <div class="pricing-value">
+                <div class="price-box">
+                  <span class="price-original">De R$ 67,00</span>
+                  <div class="price-current">
+                    <span class="price-currency">R$</span>
+                    <span class="price-value">37</span>
+                    <span class="price-cents">,90</span>
+                  </div>
+                  <span class="price-installment">ou 12x de R$ 3,67</span>
+                </div>
+              </div>
+              <a href="#" class="buy-button">Comprar agora</a>
+              <div class="secure-payments">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>Pagamento 100% seguro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq">
+        <div class="container">
+          <div class="section-header fade-in-section">
+            <div class="section-label">
+              <div class="line"></div>
+              <span>Perguntas frequentes</span>
+              <div class="line"></div>
+            </div>
+            <h2 class="section-title">Tire suas dúvidas</h2>
+            <p class="section-description">
+              Encontre respostas para as perguntas mais comuns sobre o e-book "150 Curiosidades Bíblicas".
+            </p>
+          </div>
+
+          <div class="faq-container fade-in-section">
+            <!-- FAQ items will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <a href="#" class="footer-brand">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              <span>Curiosidades Bíblicas</span>
+            </a>
+            
+            <div class="footer-links">
+              <a href="#beneficios">Benefícios</a>
+              <a href="#preview">Prévia</a>
+              <a href="#testimonials">Depoimentos</a>
+              <a href="#faq">FAQ</a>
+              <a href="#comprar">Comprar</a>
+            </div>
+            
+            <div class="footer-disclaimer">
+              <p class="disclaimer-text">
+                Este e-book não substitui a leitura da Bíblia. Ele foi criado para complementar e enriquecer 
+                seu conhecimento bíblico de forma divertida e informativa.
+              </p>
+              <p class="copyright">
+                &copy; <span id="currentYear"></span> 150 Curiosidades Bíblicas. Todos os direitos reservados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
